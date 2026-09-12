@@ -10,37 +10,37 @@ const useCases = [
     number: "01",
     title: "Rechnungen verarbeiten",
     body: "Rechnungen aus E-Mails erkennen, Daten auslesen und prüfen, Freigaben starten und Buchungen in DATEV oder dem ERP vorbereiten.",
-    result: "E-MAIL → PRÜFUNG → DATEV / ERP",
+    result: "E-MAIL · PRÜFUNG · DATEV / ERP",
   },
   {
     number: "02",
     title: "Kundenanfragen verteilen",
     body: "Anfragen automatisch erfassen, nach Inhalt und Dringlichkeit einordnen und direkt an die richtige Ansprechperson weiterleiten.",
-    result: "POSTFACH → KATEGORIE → ZUSTÄNDIGKEIT",
+    result: "POSTFACH · KATEGORIE · ZUSTÄNDIGKEIT",
   },
   {
     number: "03",
     title: "Daten synchronisieren",
     body: "Kunden-, Auftrags- oder Projektdaten zwischen Excel, CRM, ERP und internen Fachanwendungen aktuell halten.",
-    result: "EXCEL ↔ CRM ↔ ERP",
+    result: "EXCEL · CRM · ERP",
   },
   {
     number: "04",
     title: "Freigaben steuern",
     body: "Prüfungen und Freigaben durch feste Schritte führen, Zuständige erinnern und bei Verzögerungen automatisch eskalieren.",
-    result: "ANFRAGE → FREIGABE → ERINNERUNG",
+    result: "ANFRAGE · FREIGABE · ERINNERUNG",
   },
   {
     number: "05",
     title: "Reports erstellen",
     body: "Zahlen aus mehreren Quellen zusammenführen, wiederkehrende Reports erstellen und termingerecht an Empfänger versenden.",
-    result: "DATEN → REPORT → VERSAND",
+    result: "DATEN · REPORT · VERSAND",
   },
   {
     number: "06",
     title: "Dokumente auslesen",
     body: "Informationen aus PDFs, Formularen und Belegen extrahieren, validieren und strukturiert weiterverarbeiten.",
-    result: "PDF / FORMULAR → STRUKTURIERTE DATEN",
+    result: "PDF / FORMULAR · STRUKTURIERTE DATEN",
   },
 ];
 
@@ -174,7 +174,7 @@ export default function Home() {
             Ihr Team verliert jeden Tag Zeit mit wiederkehrenden Aufgaben, manuellen Übergaben und doppelter Dateneingabe. Wir automatisieren diese Abläufe - zuverlässig und integriert in Ihre bestehende IT.
           </p>
           <div className="button-row">
-            <a className="button button-dark" href="#kontakt">Erstgespräch vereinbaren ↗</a>
+            <a className="button button-dark" href="#kontakt">Erstgespräch vereinbaren</a>
           </div>
           <p className="hero-proof">Kostenlos und unverbindlich</p>
         </div>
@@ -280,8 +280,7 @@ export default function Home() {
                 <h3>{service.title}</h3>
                 <p>{service.body}</p>
                 <small>{service.tags}</small>
-                <i aria-hidden="true">↗</i>
-              </article>
+                </article>
             ))}
           </div>
         </Reveal>
@@ -296,7 +295,7 @@ export default function Home() {
               <p>Kein Plattformwechsel notwendig. Wir automatisieren auf Basis der Systeme, die Sie bereits verwenden, und binden individuelle Fachsoftware über vorhandene Schnittstellen an.</p>
             </div>
             <ul className="integration-list">
-              {integrations.map((integration) => <li key={integration}>{integration}<span>↗</span></li>)}
+              {integrations.map((integration) => <li key={integration}>{integration}</li>)}
             </ul>
           </div>
         </Reveal>
@@ -379,7 +378,7 @@ export default function Home() {
             </label>
             <div className="contact-submit">
               <small>Wir melden uns innerhalb von 24h persönlich bei Ihnen.</small>
-              <button className="button button-accent" type="button">Anfrage senden ↗</button>
+              <button className="button button-accent" type="button">Anfrage senden</button>
             </div>
           </form>
         </Reveal>
