@@ -1,0 +1,7 @@
+services:
+  jantaro:
+    build: .
+    container_name: jantaro
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
